@@ -1,0 +1,15 @@
+<svg id="baseline-add_photo_alternate-24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <path id="Path_1" data-name="Path 1" class="cls-1" d="M83,27V41.95s-9.95.05-10,0V27H58s.05-9.95,0-10H73V2H83V17H98V27ZM68,47V32H53V17H13A10.029,10.029,0,0,0,3,27V87A10.029,10.029,0,0,0,13,97H73A10.029,10.029,0,0,0,83,87V47ZM13,87,28,67,38,82,53,62,73,87Z" transform="translate(0 0)"/>
+  <path id="Path_2" data-name="Path 2" class="cls-2" d="M0,0H100V100H0Z"/>
+</svg>

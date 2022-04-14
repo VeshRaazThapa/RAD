@@ -1,0 +1,279 @@
+
+header {
+    /*width:100%;*/
+    height: 80px;
+    margin: 0;
+    /*padding-left: 5%;*/
+    /*padding-right: 5%;*/
+    display: flex;
+    align-items: center;
+}
+table{
+    background-color:#fff;
+    width:100%;
+    box-shadow:0 0 4px rgba(0,0,0,0.6);
+    border-radius:10px;
+    overflow:hidden;
+    border-collapse:collapse;
+    /*height:500px;*/
+    margin-top:50px;
+}
+
+tr:first-child{
+    background-color:#eaeaea;
+    border:none;
+    height:45px;
+    font-weight:800;
+    color:rgba(0,0,0,1)
+}
+tr{
+    background-color:#fff;
+    height:50px;
+    text-align:center;
+    border-bottom:2px solid rgba(0,0,0,0.03);
+    font-weight:700;
+    color:rgba(0,0,0,0.6)
+}
+tr:hover{
+    background-color:#f1f1f1;
+    cursor:pointer;
+}
+tr:first-child:hover{
+    background-color:#eaeaea;
+    cursor:default;
+}
+.main_contents_wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 800px;
+}
+
+.sticky_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s;
+
+}
+
+.sticky_header_shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4)
+}
+
+/*text*/
+
+/*font-weights*/
+
+.thin {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 500;
+}
+
+.semi_bold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extra_bold {
+    font-weight: 900;
+}
+
+/*typeface*/
+.primary_text_size {
+    font-size: 22px;
+}
+
+.secondary_text_size {
+    font-size: 16px;
+}
+
+.tertiary_text_size {
+    font-size: 14px;
+}
+
+/*typeface colors*/
+
+/*dark*/
+.primary_text_color {
+    color: #000;
+}
+
+.secondary_text_color {
+    color: #686868;
+}
+
+.tertiary_text_color {
+    color: #B1B1B1
+}
+
+/*light*/
+.primary_text_color_white {
+    color: #fff;
+}
+
+.secondary_text_color_white {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.tertiary_text_color_white {
+    color: rgba(255, 255, 255, 0.4)
+}
+
+/*button*/
+.blue_button {
+    background-color: #1E6DE8;
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.rounded_corner_button {
+    height: 48px;
+    border-radius: 30px;
+}
+
+.white_button {
+    background-color: #fff;
+    color: #1E6DE8;
+}
+
+.button_shadow {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.round_button_container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.round_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.round_button_dark {
+    display: flex;
+    background-color:#eaeaea;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.rectangle_button {
+    height: 48px;
+    border-radius: 4px;
+}
+
+.button_small {
+    width: 120px
+}
+
+.button_medium {
+    width: 160px
+}
+
+.button_large {
+    width: 200px
+}
+
+/*content css*/
+
+/*icon*/
+.icon {
+    width: auto;
+    height: 28px;
+}
+
+.main_content {
+    margin: 0 10% 0 10%;
+}
+
+.welcome_container {
+    margin-top: 60px;
+}
+
+.card {
+    margin: 10px;
+    /*width:auto;*/
+    border-radius: 10px;
+    height: auto;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.card_touchable {
+    cursor: pointer;
+}
+
+.card_image {
+    height: 50px;
+    width: auto;
+}
+
+.card_image_container {
+    height: 200px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_text_container {
+    padding: 16px;
+}
+
+
+
+/*on hover effects*/
+
+.button_shadow:hover {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6)
+}
+
+.blue_button:hover {
+    background-color: #1861D1;
+}
+
+.card_touchable:hover {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.round_button:hover {
+    background-color: rgba(255, 255, 255, 0.4)
+}
+.round_button_dark:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.white_button:hover {
+    background-color: #dddddd;
+    color: #1E6DE8;
+}
