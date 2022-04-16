@@ -1,0 +1,128 @@
+/*tags style*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ECEFF1;
+    background-size: 50% 50%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/*content style*/
+.dashboard_main_content_wrapper {
+    margin: 90px;
+}
+
+.absolute_background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #1E6DE8;
+}
+
+.dashboard_header {
+    background-color: #1E6DE8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*header*/
+.header_left {
+    display: flex;
+    width: 50%;
+    padding-left: 5%;
+    flex-direction: row;
+}
+
+.header_right {
+    padding-right: 5%;
+}
+
+.header_image {
+    height: 35px;
+    width: auto;
+}
+
+.header_left_text_container {
+    color: #fff;
+    margin-left: 16px;
+}
+
+.dashboard_top_info_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.dashboard_info_left {
+    display: flex;
+    flex-flow: row wrap;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+
+.total_entries {
+    margin-left: 50px;
+    color: #fff;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    width: 160px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content a:visited {
+    color: #3d3d3d;
+}
+
+.show {
+    display: block;
+}
+
