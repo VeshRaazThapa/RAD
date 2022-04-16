@@ -39,11 +39,11 @@ if(!$username){
 <div class="image_viewer" id="image_viewer">
     <div class="round_button_container" style="position:absolute; top:40px; left:5%">
         <div class="round_button" onclick="closeImageViewer();">
-            <img class="icon" src="../assets/back.png">
+            <img class="icon" src="">
         </div>
     </div>
     <div class="output_input_image_container">
-        <img class="input_image_full" src="../assets/example_image.jpg">
+        <img class="input_image_full" src="">
 
     </div>
 </div>
@@ -51,7 +51,7 @@ if(!$username){
 <div class="main_contents_wrapper new_entry_content_wrapper">
     <div class="round_button_container">
         <a class="round_button_dark" href="index.php">
-            <img class="icon" src="../assets/back.png">
+            <img class="icon" src="">
         </a>
 
     </div>
@@ -80,7 +80,7 @@ if(!$username){
             <select name="parts" >
                 <option value ="elbow">Elbow</option>
                 <option value ="finger">Finger</option>
-                <option value="leg">Leg</option>
+//                 <option value="leg">Leg</option>
                 <option value="wrist">Wrist</option>
             </select>
 
@@ -126,7 +126,7 @@ if(!$username){
                             <?php
                             if (isset($_POST['diagnose'])) {
                                 $target_dir = "./";
-                                $target_file = $target_dir .  date('d_m_Y_H_i_s') ."_".basename($_FILES['image']['name']).".jpg";
+                                $target_file = $target_dir .  date('d_m_Y_H_i_s') ."_".basename($_FILES['image']['name']);
                                 ?>
                                 <script>
                                     var input = document.getElementById('input');
@@ -143,8 +143,11 @@ if(!$username){
                             $type_json = array('id' => $id, 'type' => $type);
                             $file_open = fopen("types.json", "w");
                             fwrite($file_open, json_encode($type_json));
-                            $command = 'python send_to_api.py ' . $fp;
-                            $result = shell_exec($command);
+//                             $command = 'python send_to_api.py ' . $fp;
+//                             shell_exec('python send_to_api.py ');
+
+
+                            $result = shell_exec('python send_to_api.py ' . $fp .'///'. $type);
                             $get_process_json = file_get_contents("process.json");
                             $decode_json = json_decode($get_process_json,True);
                             $label =  $decode_json['prediction']['label'];
@@ -161,7 +164,7 @@ if(!$username){
                             ?>
                                 <script>
                                     var output = document.getElementById('output');
-                                    output.src = "<?php echo "http://c2ec3c8e.ngrok.io/cam/".$highlighted_image; ?>";
+                                    output.src = "<?php echo "http://127.0.0.1:8000/static/".$highlighted_image; ?>";
                                 </script>
                             <?php
                             }

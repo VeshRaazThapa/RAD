@@ -127,9 +127,9 @@ if(!$username){
             ?>
             <script>
                 var output = document.getElementById('output');
-                output.src = "<?php echo "http://c2ec3c8e.ngrok.io/cam/".$highlighted_image; ?>";
+                output.src = "<?php echo "http://127.0.0.1:8000/static/".$highlighted_image; ?>";
                 var outputs = document.getElementById('output_full');
-                outputs.src = "<?php echo "http://c2ec3c8e.ngrok.io/cam/".$highlighted_image; ?>";
+                outputs.src = "<?php echo "http://127.0.0.1:8000/static/".$highlighted_image; ?>";
             </script>
             <?php
         }
@@ -143,7 +143,7 @@ if(!$username){
         <div class="output">
             <div class="output_image_container">
                 <div class="output_input_image_container" onclick="showImageViewer()">
-                    <img id = "input" class="input_image" src="<?php echo $highlighted_image; ?>" >
+                    <img id = "input" class="input_image" src="<?php echo "http://127.0.0.1:8000/static/".$highlighted_image; ?>" >
                     <img id = "output" class="output_image" >
                 </div>
 
