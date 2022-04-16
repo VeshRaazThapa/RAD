@@ -81,7 +81,7 @@ if(!$username){
                     <select name="parts" >
                     <option value ="elbow">Elbow</option>
                     <option value ="finger">Finger</option>
-                    <option value="leg">Leg</option>
+//                     <option value="leg">Leg</option>
                     <option value="wrist">Wrist</option>
                     </select>
         <select name="trauma">
@@ -150,7 +150,7 @@ if(!$username){
                                 $type_json = array('id' => $id, 'type' => $type);
                                 $file_open = fopen("types.json", "w");
                                 fwrite($file_open, json_encode($type_json));
-                                $command = 'python send_to_api.py ' . $fp;
+                                $command = 'python send_to_api.py '. $fp .'///'. $type;
                                 $result = shell_exec($command);
                                 $get_process_json = file_get_contents("process.json");
                                 $decode_json = json_decode($get_process_json,True);
@@ -182,9 +182,9 @@ if(!$username){
                                     ?>
                             <script>
                                 var output = document.getElementById('output');
-                                output.src = "<?php echo "http://c2ec3c8e.ngrok.io/cam/".$highlighted_image; ?>";
+                                output.src = "<?php echo "http://127.0.0.1:8000/static/".$highlighted_image; ?>";
                                 var outputs = document.getElementById('output_full');
-                                outputs.src = "<?php echo "http://c2ec3c8e.ngrok.io/cam/".$highlighted_image; ?>";
+                                outputs.src = "<?php echo "http://127.0.0.1:8000/static/".$highlighted_image; ?>";
                             </script>
                             <?php
                                 }
