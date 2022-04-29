@@ -81,7 +81,6 @@ if(!$username){
                 <option value ="elbow">Elbow</option>
                 <option value ="finger">Finger</option>
                 <option value ="hand">Hand</option>
-//                 <option value="leg">Leg</option>
                 <option value="wrist">Wrist</option>
             </select>
 

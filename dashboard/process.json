@@ -1,1 +1,1 @@
-{"highlighted_imagename": "28_04_2022_21_07_52_image411186_highlighted_image.png", "prediction": {"probabilities": [0.17349068820476532, 0.8265092968940735], "prediction": 0, "label": "Abnormal"}, "success": true, "id": "28_04_2022_21_07_52_image411186"}
+{"highlighted_imagename": "patient101_highlighted_image.png", "prediction": {"probabilities": [0.763993501663208, 0.23600651323795319], "prediction": 0, "label": "Abnormal"}, "success": true, "id": "29_04_2022_14_51_16_patient101"}
